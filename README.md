@@ -11,7 +11,7 @@ gcloud alpha functions deploy scaleUpDown --region [REGION] --trigger-http --buc
 
 To call:
 
-curl -X POST https://us-east1.<project_id>.cloudfunctions.net/scaleUpDown --data '{"instance-group":"<YOUR_INSTANCE_GROUP>","scale-to":2}'
+curl -X POST https://us-east1.[project_id].cloudfunctions.net/scaleUpDown --data '{"instance-group":"<YOUR_INSTANCE_GROUP>","scale-to":2}'
 
 OR
 
@@ -36,6 +36,6 @@ call from App Script:
       
       Logger.log(JSON.stringify(options));
 
-      var response = UrlFetchApp.fetch("https://us-east1.<project_id>.cloudfunctions.net/scaleUpDown", options);
+      var response = UrlFetchApp.fetch("https://us-east1.[project_id].cloudfunctions.net/scaleUpDown", options);
     
       Logger.log("Response: " + response);
