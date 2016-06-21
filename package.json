@@ -1,0 +1,17 @@
+{
+  "name": "node-gce-scale-up-down",
+  "version": "1.0.0",
+  "description": "MJC Testing Autoscale up / down",
+  "main": "index.js",
+  "keywords": [
+    "cloud",
+    "functions",
+    "gcp",
+    "gcf"
+  ],
+  "author": "Mark Chilvers",
+  "license": "ISC",
+  "dependencies": {
+    "gcloud": "^0.36.0"
+  }
+}
